@@ -1,0 +1,44 @@
+/* Transições suaves para a sidebar */
+.sidebar {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo para os links */
+.nav-link {
+  transition: all 0.2s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  margin: 0.1rem 0;
+}
+
+/* Melhorias para mobile */
+@media (max-width: 767.98px) {
+  .sidebar {
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-link {
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* Estilo para o botão de toggle mobile */
+.mobile-toggle-btn {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .mobile-toggle-btn {
+    display: block;
+  }
+  
+  .mobile-toggle-btn.dark {
+    background-color: #333;
+    color: white;
+  }
+  
+  .mobile-toggle-btn.light {
+    background-color: #f8f9fa;
+    color: black;
+  }
+}
